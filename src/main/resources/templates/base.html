@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeLeaf.org" th:fragment="layout(content)">
+<head>
+	<meta charset="UTF-8" />
+	<title>Base this base page</title>
+	<link rel="stylesheet"th:href="@{style.css}" />
+</head>
+<body>
+	<h>This is comman header</h>
+	<div th:replace="${content}">
+		<h1>This is Footer</h1>
+		</div>
+</body>
+</html>
